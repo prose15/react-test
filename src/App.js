@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import InputBox from "./InputBox";
+import Model from "./Model";
+
 
 function App() {
+  const [model,setModel] = useState(false)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-background-img bg-cover h-screen">
+      { model &&  <Model setModel={setModel}/>}
+     <InputBox model={model} setModel ={setModel}/>
     </div>
   );
 }
