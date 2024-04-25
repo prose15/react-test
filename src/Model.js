@@ -22,7 +22,7 @@ const Model = ({model ,setModel}) => {
 
   return (
     <div>
-           <div className=' bg-opacity-10 w-full h-screen'>
+           <div className='bg-black bg-opacity-50 w-full h-screen'>
             <div className='bg-white rounded-lg mx-auto w-[30%]'>
                 <div className='flex justify-between p-4 '>
                 <p className='text-black'>Select Token</p>
